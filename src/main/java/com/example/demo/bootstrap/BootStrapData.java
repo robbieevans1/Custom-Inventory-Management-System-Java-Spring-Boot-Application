@@ -46,6 +46,8 @@ public class BootStrapData implements CommandLineRunner {
             InhousePart muffler = new InhousePart();
             muffler.setName("Paradox Muffler");
             muffler.setInv(21);
+            muffler.setMinInv(1);
+            muffler.setMaxInv(1000);
             muffler.setPrice(5555);
             muffler.setId(21);
             inhousePartRepository.save(muffler);
@@ -53,6 +55,8 @@ public class BootStrapData implements CommandLineRunner {
             InhousePart spool = new InhousePart();
             spool.setName("Reality Rewinder Spool");
             spool.setInv(100);
+            spool.setMinInv(1);
+            spool.setMaxInv(1000);
             spool.setPrice(2000);
             spool.setId(764);
             inhousePartRepository.save(spool);
@@ -60,6 +64,8 @@ public class BootStrapData implements CommandLineRunner {
             InhousePart carburetor = new InhousePart();
             carburetor.setName("Causality Carburetor");
             carburetor.setInv(117);
+            carburetor.setMinInv(1);
+            carburetor.setMaxInv(1000);
             carburetor.setPrice(942);
             carburetor.setId(291);
             inhousePartRepository.save(carburetor);
@@ -67,6 +73,8 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart core = new OutsourcedPart();
             core.setName("Chrono Core Stabilizer");
             core.setInv(15);
+            core.setMinInv(1);
+            core.setMaxInv(1000);
             core.setPrice(15555);
             core.setId(218);
             core.setCompanyName("Future Flight");
@@ -75,6 +83,8 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart turbocCore = new OutsourcedPart();
             turbocCore.setName("Mighty Turbo Core Stabilizer");
             turbocCore.setInv(10);
+            turbocCore.setMinInv(1);
+            turbocCore.setMaxInv(1000);
             turbocCore.setPrice(14000);
             turbocCore.setId(640);
             turbocCore.setCompanyName("Excellsior");
@@ -84,6 +94,8 @@ public class BootStrapData implements CommandLineRunner {
             Product pastFinder = new Product();
             pastFinder.setName("PastFinder Pro");
             pastFinder.setInv(254);
+            pastFinder.setMinInv(1);
+            pastFinder.setMaxInv(1000);
             pastFinder.setPrice(1000000);
             pastFinder.setId(856);
             productRepository.save(pastFinder);
@@ -91,6 +103,8 @@ public class BootStrapData implements CommandLineRunner {
             Product falcon = new Product();
             falcon.setName("Tempus Falcon");
             falcon.setInv(7);
+            falcon.setMinInv(1);
+            falcon.setMaxInv(1000);
             falcon.setPrice(1500000);
             falcon.setId(789);
             productRepository.save(falcon);
@@ -98,6 +112,8 @@ public class BootStrapData implements CommandLineRunner {
             Product glass = new Product();
             glass.setName("Hourglass NX");
             glass.setInv(5);
+            glass.setMinInv(1);
+            glass.setMaxInv(1000);
             glass.setPrice(1500000);
             glass.setId(154);
             productRepository.save(glass);
@@ -105,6 +121,8 @@ public class BootStrapData implements CommandLineRunner {
             Product engine = new Product();
             engine.setName("Eclipse Engine Zero");
             engine.setInv(4);
+            engine.setMinInv(1);
+            engine.setMaxInv(1000);
             engine.setPrice(1500000);
             engine.setId(155);
             productRepository.save(engine);
@@ -112,6 +130,8 @@ public class BootStrapData implements CommandLineRunner {
             Product beetle = new Product();
             beetle.setName("Quantum Beetle");
             beetle.setInv(7);
+            beetle.setMinInv(1);
+            beetle.setMaxInv(1000);
             beetle.setPrice(1500000);
             beetle.setId(156);
             productRepository.save(beetle);
