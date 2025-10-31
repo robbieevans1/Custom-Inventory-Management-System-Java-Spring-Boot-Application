@@ -18,7 +18,11 @@
 <body>
 
 <div class="container">
-    <h1>Robbie's Imaginary Time-Machine Shop</h1>
+    <div class="row align-items-center">
+        <h1 class="col">Robbie's Imaginary Time-Machine Shop</h1>
+        <a th:href="@{/showAboutPage}" class="col-auto btn btn-primary btn-md">About</a>
+    </div>
+
     <hr>
     <h2>Parts</h2>
     <form th:action="@{/mainscreen}">
@@ -29,7 +33,7 @@
         <input type="button" value="Clear" id="btnClearPart" onclick="clearSearch()" />
     </form>
     <br><br>
-    <a th:href="@{/showFormAddInPart}" class="btn btn-primary btn-sm mb-3">Add Inhouse Part</a>
+    <a th:href="@{/showFormAddInPart}" class="btn btn-primary btn-sm mb-3">Add In house Part</a>
     <a th:href="@{/showFormAddOutPart}" class="btn btn-primary btn-sm mb-3">Add Outsourced Part</a>
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
