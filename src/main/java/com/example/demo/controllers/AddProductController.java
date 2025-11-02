@@ -132,8 +132,8 @@ public class AddProductController {
         ProductService productService = context.getBean(ProductServiceImpl.class);
         Product product2=productService.findById(theId);
         int inv = product2.getInv();
-
-        if (inv >0){
+        System.out.println("Inventory for " + product2.getName() + "is at " + inv);
+        if (inv > product2.getMinInv()){
 
             inv=inv-1;
             product2.setInv(inv);
@@ -141,7 +141,7 @@ public class AddProductController {
 
             return "Success";
         }
-        else {
+        else  {
             return "Failure";
         }
     }

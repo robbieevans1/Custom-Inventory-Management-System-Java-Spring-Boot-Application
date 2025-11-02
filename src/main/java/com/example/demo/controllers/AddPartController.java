@@ -71,7 +71,7 @@ public class AddPartController {
         Part part=repo.findById(theId);
         int inv = part.getInv();
 
-        if (inv >0){
+        if (inv > part.getMinInv()){
             inv=inv-1;
             part.setInv(inv);
             repo.save(part);

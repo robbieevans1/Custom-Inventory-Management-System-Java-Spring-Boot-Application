@@ -51,3 +51,7 @@ I.  Add at least two unit tests for the maximum and minimum fields to the PartTe
 
 J.  Remove the class files for any unused validators in order to clean your code.
 - Removed src/main/java/com/example/demo/validators/DeletePartValidator.java
+
+Resubmission. Added min. inventory as conditional check for buying part/product
+- src/main/java/com/example/demo/controllers/AddPartController.java line 74
+- src/main/java/com/example/demo/controllers/AddProductController.java line 136
