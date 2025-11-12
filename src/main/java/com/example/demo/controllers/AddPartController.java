@@ -65,4 +65,20 @@ public class AddPartController {
         }
     }
 
+    @GetMapping("/buypart")
+    public String buyPart(@Valid @RequestParam("partID") int theId,  Model theModel){
+        PartService repo = context.getBean(PartServiceImpl.class);
+        Part part=repo.findById(theId);
+        int inv = part.getInv();
+
+        if (inv > part.getMinInv()){
+            inv=inv-1;
+            part.setInv(inv);
+            repo.save(part);
+            return "Success";
+        }
+        else {
+            return "Failure";
+        }
+    }
 }
